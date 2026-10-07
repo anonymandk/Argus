@@ -90,7 +90,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: argus-${{ matrix.platform }}
-          path: dist/ARGUS-${{ github.ref_name }}-*
+          path: dist/ARGUS-*
           if-no-files-found: error
           retention-days: 7
 
